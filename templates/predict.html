@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SIH</title>
+    <!------------------------------------- links --------------------------------------------------------------------------------------------------------------->
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!------------------------------------- links -------------------------------------------------------------------------------------------------->
+
+</head>
+<body>  
+
+    
+<div class="container">
+    <h1 class="bg-info h1"><center>NIRF SCORE PREDICTOR</center></h1>
+    <br>
+</div>
+
+<hr>
+<br>
+
+<h1>YOUR SCORE IS:</h1>
+{{result}}
+<div class="container bg-light w-50 bg-gradient">
+<br>
+<form action="" method="POST">
+    <table class="table table-borderless w-50" align="center" width="70%">
+        {% csrf_token %}
+        <!-- <tr><th scope="row"><label class="text-dark text-lg" for="SS">SS:</label></td>
+        <td><select class="form-control" name="SS">
+           <option value="0">Fema</option>
+           <option value="1">Male</option>
+        </select></td></tr> -->
+
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="SS">SS:</label></td>
+          <td><input class="form-control" type="text" required placeholder="SS" name="SS"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="FSR">FSR:</label></td>
+          <td><input class="form-control" type="text" required placeholder="FSR" name="FSR" required placeholder="FSR"></td> </tr>
+
+        <tr ><th scope="row"> <label class="text-dark text-lg" for="FQE">FQE:</label></td>
+          <td><input class="form-control" type="text" required placeholder="FQE" name="FQE"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="FRU">FRU:</label></td>
+          <td><input class="form-control" type="text" required placeholder="FRU" name="FRU"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="PU">PU:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="PU" name="PU"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="QP">QP:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="QP" name="QP"></td> </tr>
+        <tr><th scope="row"> <label class="text-dark text-lg" for="IPR">IPR:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="IPR" name="IPR"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="FPPP">FPPP:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="FPPP" name="FPPP"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="GPH">GPH:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="GPH" name="GPH"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="GUE">GUE:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="GUE" name="GUE"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="MS">MS:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="MS" name="MS"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="GPHD">GPHD:</label></td>
+          <td>  <input class="form-control" type="text" required placeholder="GPHD" name="GPHD"></td> </tr>
+
+        <tr><th scope="row"> <label class="text-dark text-lg" for="RD">RD:</label></td>
+            <td><input class="form-control" type="text" required placeholder="RD" name="RD" required placeholder="RD"></td> </tr>
+        <tr><th scope="row"> <label class="text-dark text-lg" for="WD">WD:</label></td>
+            <td><input class="form-control" type="text" required placeholder="WD" name="WD" required placeholder="WD"></td> </tr>
+        
+            <tr><th scope="row"> <label class="text-dark text-lg" for="ESCS">:ESCS</label></td>
+                <td><input class="form-control" type="text" required placeholder="ESCS" name="ESCS" required placeholder="ESCS"></td> </tr>
+        
+                <tr><th scope="row"> <label class="text-dark text-lg" for="PCS">PCS:</label></td>
+                    <td><input class="form-control" type="text" required placeholder="PCS" name="PCS" required placeholder="PCS"></td> </tr>
+
+                    <tr><th scope="row"> <label class="text-dark text-lg" for="PR">PR:</label></td>
+                        <td><input class="form-control" type="text" required placeholder="PR" name="PR" required placeholder="PR"></td> </tr>
+    
+        </table>
+    <hr>
+    <center><button type="submit" value="submit" class="btn btn-info btn-lg btn-block">Predict</button></center>
+</form>
+</div>
+<br>
+<br>
+
+<!-- {{result}} -->
+</div>
+</body>
+</html>
