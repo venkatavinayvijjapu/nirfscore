@@ -4,8 +4,11 @@ This project aims to predict the NIRF (National Institutional Ranking Framework)
 
 **Requirements:**
 Python 3.7 or higher
+
 Pipenv
+
 Jupyter Notebook (optional)
+
 Django
 
 Required packages can be found in the requirements.txt file
